@@ -23,10 +23,14 @@ export class MyComponent extends LitElement {
     }
   `;
 
-  @property({ type: String }) message: string =
-    "Hello, this is a Lit component!";
-  @property({ type: String }) color: string = "black"; // 新しく追加
-  @property({ type: String }) size: "small" | "medium" | "large" = "medium"; // 新しく追加
+  @property()
+  message = "Hello, this is a Lit component!";
+
+  @property()
+  color = "black";
+
+  @property()
+  size: "small" | "medium" | "large" = "medium";
 
   render() {
     return html`

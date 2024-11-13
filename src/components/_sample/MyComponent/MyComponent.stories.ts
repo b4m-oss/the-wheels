@@ -1,14 +1,14 @@
+import type { Meta, StoryObj } from "@storybook/web-components";
 import { MyComponent } from "./MyComponent";
 
-// コンポーネントの引数の型を定義
-type MyComponentProps = {
+type MyComponentArgs = {
   message: string;
   color: string;
   size: "small" | "medium" | "large";
 };
 
-export default {
-  title: "Components/MyComponent",
+const meta: Meta<MyComponentArgs> = {
+  title: "Components/Sample/MyComponent",
   component: "my-component",
   argTypes: {
     message: { control: "text" },
@@ -18,24 +18,23 @@ export default {
       options: ["small", "medium", "large"],
     },
   },
+} satisfies Meta<MyComponentArgs>;
+
+export default meta;
+
+const Template = (args: { message: string; color: string; size: "small" | "medium" | "large" }) => {
+  const element = document.createElement("my-component") as MyComponent;
+  element.message = args.message;
+  element.color = args.color;
+  element.size = args.size;
+  return element;
 };
 
-// テンプレートの型を明示的に定義
-const Template = (args: MyComponentProps) => new MyComponent();
-
-// Story型を定義して型キャストをシンプルに
-type Story = typeof Template & { args: MyComponentProps };
-
-export const Default = Template.bind({}) as Story;
-Default.args = {
-  message: "Hello, Storybook!",
-  color: "blue",
-  size: "medium",
-};
-
-export const Small = Template.bind({}) as Story;
-Small.args = {
-  message: "This is small text.",
-  color: "red",
-  size: "small",
+export const Default: StoryObj<MyComponentArgs> = {
+  render: Template,
+  args: {
+    message: "Hello, Storybook!",
+    color: "blue",
+    size: "medium",
+  },
 };

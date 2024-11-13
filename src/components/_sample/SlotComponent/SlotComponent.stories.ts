@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/web-components";
 import { SlotComponent } from "./SlotComponent";
 
 export default {
-  title: "Components/SlotComponent",
+  title: "Components/Sample/SlotComponent",
   component: "slot-component",
   argTypes: {
     content: { control: "text" },

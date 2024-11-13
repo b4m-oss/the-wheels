@@ -28,6 +28,8 @@ const config: StorybookConfig = {
     return config;
   },
   // Web Components用の設定
-  docs: {},
+  docs: {
+    autodocs: true,
+  },
 };
 export default config;
