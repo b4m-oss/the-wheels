@@ -1,16 +1,16 @@
 :root {
-    --text-main: #494949;
-    --text-caption: #747474;
-    --text-highlight: #000000;
-    --bg-page: #efefef;
-    --bg-page-dark: #343434;
-    --text-caption-dark: #b0b0b0;
-    --text-main-dark: #cbcbcb;
-    --bg-button-main: #3b3b3b;
-    --bg-button-optional: #e1e1e1;
-    --alert: #bc2f2f;
-    --bg-button-hover: #696969;
-    --global-rounding: 5px;
-    --global-rounding---minor: 3px;
-    --text-placeholder: #c5c5c5;
+  --text-main: #494949;
+  --text-caption: #747474;
+  --text-highlight: #000000;
+  --bg-page: #efefef;
+  --bg-page-dark: #343434;
+  --text-caption-dark: #b0b0b0;
+  --text-main-dark: #cbcbcb;
+  --bg-button-main: #3b3b3b;
+  --bg-button-optional: #e1e1e1;
+  --alert: #bc2f2f;
+  --bg-button-hover: #696969;
+  --global-rounding: 5px;
+  --global-rounding---minor: 3px;
+  --text-placeholder: #c5c5c5;
 }

@@ -1,21 +1,21 @@
-import { MyComponent } from './MyComponent';
+import { MyComponent } from "./MyComponent";
 
 // コンポーネントの引数の型を定義
 type MyComponentProps = {
   message: string;
   color: string;
-  size: 'small' | 'medium' | 'large';
+  size: "small" | "medium" | "large";
 };
 
 export default {
-  title: 'Components/MyComponent',
-  component: 'my-component',
+  title: "Components/MyComponent",
+  component: "my-component",
   argTypes: {
-    message: { control: 'text' },
-    color: { control: 'color' },
-    size: { 
-      control: 'select', 
-      options: ['small', 'medium', 'large'] 
+    message: { control: "text" },
+    color: { control: "color" },
+    size: {
+      control: "select",
+      options: ["small", "medium", "large"],
     },
   },
 };
@@ -29,13 +29,13 @@ type Story = typeof Template & { args: MyComponentProps };
 export const Default = Template.bind({}) as Story;
 Default.args = {
   message: "Hello, Storybook!",
-  color: 'blue',
-  size: 'medium',
+  color: "blue",
+  size: "medium",
 };
 
 export const Small = Template.bind({}) as Story;
 Small.args = {
   message: "This is small text.",
-  color: 'red',
-  size: 'small',
+  color: "red",
+  size: "small",
 };

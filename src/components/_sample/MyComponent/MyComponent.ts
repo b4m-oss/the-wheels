@@ -23,7 +23,8 @@ export class MyComponent extends LitElement {
     }
   `;
 
-  @property({ type: String }) message: string = "Hello, this is a Lit component!";
+  @property({ type: String }) message: string =
+    "Hello, this is a Lit component!";
   @property({ type: String }) color: string = "black"; // 新しく追加
   @property({ type: String }) size: "small" | "medium" | "large" = "medium"; // 新しく追加
 

@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "format": "prettier --write './src'"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
     "@storybook/web-components": "^8.4.2",
     "@storybook/web-components-vite": "^8.4.2",
     "@types/node": "^22.9.0",
+    "prettier": "^3.3.3",
     "reset-css": "^5.0.2",
     "storybook": "^8.4.2"
   }

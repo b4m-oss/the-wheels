@@ -1,7 +1,7 @@
 import { LitElement, html, css } from "lit";
 import { customElement } from "lit/decorators.js";
 
-@customElement("slot-component")  // コンポーネント名を 'slot-component' に変更
+@customElement("slot-component") // コンポーネント名を 'slot-component' に変更
 export class SlotComponent extends LitElement {
   static styles = css`
     :host {
