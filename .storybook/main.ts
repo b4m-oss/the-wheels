@@ -1,8 +1,15 @@
 import type { StorybookConfig } from "@storybook/web-components-vite";
 
 const config: StorybookConfig = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
-  addons: ["@storybook/addon-essentials", "@chromatic-com/storybook"],
+  stories: [
+    "../src/**/*.mdx",
+    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+  ],
+  addons: [
+    "@storybook/addon-essentials",
+    "@chromatic-com/storybook",
+    "@storybook/addon-mdx-gfm"
+  ],
   framework: {
     name: "@storybook/web-components-vite",
     options: {},
@@ -21,8 +28,6 @@ const config: StorybookConfig = {
     return config;
   },
   // Web Components用の設定
-  docs: {
-    autodocs: true, // 自動的にドキュメント生成を有効化
-  },
+  docs: {},
 };
 export default config;

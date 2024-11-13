@@ -20,11 +20,13 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
     "@storybook/addon-essentials": "^8.4.2",
+    "@storybook/addon-mdx-gfm": "^8.4.2",
     "@storybook/blocks": "^8.4.2",
     "@storybook/test": "^8.4.2",
     "@storybook/web-components": "^8.4.2",
     "@storybook/web-components-vite": "^8.4.2",
     "@types/node": "^22.9.0",
+    "reset-css": "^5.0.2",
     "storybook": "^8.4.2"
   }
 }
