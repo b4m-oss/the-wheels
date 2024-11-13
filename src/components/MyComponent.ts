@@ -1,7 +1,7 @@
-import { LitElement, html, css } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { LitElement, html, css } from "lit";
+import { customElement, property } from "lit/decorators.js";
 
-@customElement('my-component')
+@customElement("my-component")
 export class MyComponent extends LitElement {
   static styles = css`
     :host {
@@ -11,7 +11,8 @@ export class MyComponent extends LitElement {
     }
   `;
 
-  @property({ type: String }) message: string = 'Hello, this is a Lit component!';
+  @property({ type: String }) message: string =
+    "Hello, this is a Lit component!";
 
   render() {
     return html`<p>${this.message}</p>`;
