@@ -8,14 +8,14 @@ const config: StorybookConfig = {
     options: {},
   },
   core: {
-    builder: '@storybook/builder-vite', // Viteをビルダーとして指定
+    builder: "@storybook/builder-vite", // Viteをビルダーとして指定
   },
   viteFinal: async (config, { configType }) => {
     // 必要に応じてViteの設定をカスタマイズ
-    if (configType === 'DEVELOPMENT') {
+    if (configType === "DEVELOPMENT") {
       config.server = {
         ...config.server,
-        open: true,  // 自動的にブラウザを開く設定
+        open: true, // 自動的にブラウザを開く設定
       };
     }
     return config;
