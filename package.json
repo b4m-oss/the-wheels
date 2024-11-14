@@ -1,34 +1,25 @@
 {
   "name": "the-wheels",
-  "version": "0.1.0",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "format": "prettier --write './src'"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "@web-types/lit": "^2.0.0-3",
-    "lit": "^3.2.1",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.11"
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
-    "@storybook/addon-essentials": "^8.4.2",
-    "@storybook/addon-mdx-gfm": "^8.4.2",
-    "@storybook/blocks": "^8.4.2",
-    "@storybook/test": "^8.4.2",
-    "@storybook/web-components": "^8.4.2",
-    "@storybook/web-components-vite": "^8.4.2",
-    "@types/node": "^22.9.0",
-    "prettier": "^3.3.3",
-    "reset-css": "^5.0.2",
-    "storybook": "^8.4.2"
+    "@storybook/addon-essentials": "^8.4.3",
+    "@storybook/addon-interactions": "^8.4.3",
+    "@storybook/blocks": "^8.4.3",
+    "@storybook/html": "^8.4.3",
+    "@storybook/html-vite": "^8.4.3",
+    "@storybook/test": "^8.4.3",
+    "storybook": "^8.4.3",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10"
   }
 }
